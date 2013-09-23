@@ -1,0 +1,3 @@
+[submodule "astrant-extensions"]
+	path = astrant-extensions
+	url = git@github.com:sgielen/astrant-extensions.git

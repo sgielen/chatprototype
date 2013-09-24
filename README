@@ -1,1 +1,21 @@
-ChatPrototype
+ChatPrototype: A chat message viewer prototype. Work-in-progress for a
+Quassel-like IRC GUI with detachable core.
+
+Works best with Qt5. Works with Qt4. Please tell me about your experiences with
+either.
+
+First, update Git submodules:
+  git submodule update --init
+
+Build using cmake:
+  mkdir build
+  cd build
+  cmake [options] ..
+  make
+  ./ChatPrototype
+
+Recommend release build with assertions enabled, i.e. add to options:
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo
+
+To build with libc++ (e.g. Clang on Mac OS X), add to options:
+  -DUSE_LIBCPP=YES
